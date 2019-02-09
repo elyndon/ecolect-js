@@ -35,7 +35,7 @@ const ecolect = require('ecolect');
 const en = require('ecolect/language/en');
 const { any } = require('ecolect/values');
 
-const intents = ecolect.intents(en)
+const intents = ecolect.intentsBuilder(en)
   .intent('lights:on')
     .value('room', any())
     .add('turn lights on')
